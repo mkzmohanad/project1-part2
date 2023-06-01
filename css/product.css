@@ -1,0 +1,118 @@
+/* global style */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* global style */
+.single-product {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+}
+.single-product .container {
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content:space-between;
+}
+
+.single-product .product-image {
+    width:80%;
+}
+.single-product .product-image img {
+    width:80%;
+}
+.single-product .product-info {
+    width:60%;
+}
+.single-product .product-info h1 {
+    margin-bottom: 15px;
+}
+.single-product .product-info p {
+    opacity: 0.5;
+    line-height: 25px;
+}
+.single-product .product-info p:first-of-type {
+    margin-bottom:15px;
+}
+.single-product .product-info p:last-of-type {
+    color: var(--main-color);
+    opacity: 1;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin: 35px 0 25px;
+}
+.single-product .product-info .radios {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.single-product .product-info .radios .radio {
+    display: flex;
+    align-items: center;
+}
+.single-product .product-info .radios .radio p {
+    color: black;
+    font-size: 1em;
+    margin: 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.single-product .product-info .radios .radio input[type="radio"] {
+    margin-right: 5px;
+    accent-color: var(--main-color);
+}
+.single-product .product-info .number-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6vh;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    width: 25%;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.single-product .product-info .number-control p {
+    margin: 0;
+    font-size: 1.5em;
+}
+.single-product .product-info .number-control input[type="number"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    color:var(--main-color);
+    font-size: 1.5em;
+    position: relative;
+    /* caret-color: transparent; */
+}
+.single-product .product-info .number-control button {
+    height: 100%;
+    width: 30%;
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: var(--main-transition);
+}
+.single-product .product-info .number-control button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+.single-product .product-info .number-control button:hover {
+    width: 50%;
+}
+.main-btn {
+    width:27%;
+}
+.main-btn a {
+    color: white;
+}

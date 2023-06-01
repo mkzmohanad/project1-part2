@@ -1,0 +1,107 @@
+.how-start,
+.teams {
+    width: 100%;
+    height: 90vh;
+    padding-top: 100px;
+}
+.how-start .container {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.how-start .how-start-image {
+    width:50%;
+    position: relative;
+}
+.how-start .how-start-image img {
+    max-width: 100%;
+}
+.how-start .how-start-image::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+.how-start .how-start-info {
+    width: 40%;
+    text-align: start;
+}
+.how-start .how-start-info h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.how-start .how-start-info p {
+    margin-bottom:20px;
+    line-height: 25px;
+    color:rgba(0, 0, 0, 0.6);
+}
+.how-start .how-start-info .section-line {
+    margin:10px 0;
+    width: 8%;
+}
+/* start section team */
+.teams .container {
+    height: 100%;
+}
+.team-members {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height: 100%;
+    padding:20px 0;
+}
+.team-members .team-member {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height: 80%;
+    padding:20px;
+    position: relative;
+}
+.team-members .team-member::after,
+.team-members .team-member::before {
+    content: "";
+    width: 4px;
+    background-color: var(--main-color);
+    height: 0%;
+    z-index: 111;
+    transition: var(--main-transition);
+    position: absolute;
+}
+.team-members .team-member::after {
+    left: 0;
+    top: 0;
+}
+.team-members .team-member::before {
+    right: 0;
+    bottom: 0;
+}
+.team-members .team-member:hover::after,
+.team-members .team-member:hover::before {
+    height: 100%;
+}
+.team-members .team-member img {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.team-members .team-member h2 {
+    font-size:1.3em;
+}
+.team-members .team-member p:first-of-type {
+    opacity: 0.4;
+    margin-bottom: 25px;
+}
+.team-members .team-member p:last-of-type {
+    text-align: center;
+    opacity: 0.6;
+    line-height:25px;
+}
+/* end section team */

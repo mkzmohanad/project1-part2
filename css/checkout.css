@@ -1,0 +1,224 @@
+.details {
+    padding : 100px 0;
+}
+.details .login {
+    width : 100%;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:20px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+.details .login a {
+    opacity: 1 !important;
+    color: var(--main-color);
+}
+.details .user-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.details .billing-details,
+.details .coupon-details {
+    width:48%;
+    height: 100%;
+}
+.details .billing-details h1,
+.details .coupon-details h1 {
+    margin-bottom:15px;
+}
+.details .billing-details form,
+.details .coupon-details .coupon-code-area,
+.details .coupon-details .total-order {
+    border:1px solid rgba(0, 0, 0, 0.1);
+    padding:50px;
+    border-radius: 3px;
+}
+.details .billing-details .icon-par {
+    display: flex;
+}
+.details .billing-details .asterisk {
+    font-size:0.4em;
+    color:red;
+    margin-left:5px;
+}
+.details .billing-details form label,
+.company-name {
+    margin-bottom:10px;
+}
+.details .billing-details form select,
+.details .billing-details form input[type="text"] {
+    width:100%;
+    padding:8px 10px;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.details .billing-details form .name, 
+.details .billing-details form .state-zip,
+.details .billing-details form .email-phone {
+    display: flex;
+    justify-content: space-between;
+}
+.details .billing-details form .name .first-name,
+.details .billing-details form .name .last-name,
+.details .billing-details form .state-zip .state,
+.details .billing-details form .state-zip .zip,
+.details .billing-details form .email-phone .email-address,
+.details .billing-details form .email-phone .phone {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.details .billing-details form .name .first-name .label-icon,
+.details .billing-details form .name .last-name .label-icon,
+.details .billing-details form .state-zip .state .label-icon,
+.details .billing-details form .state-zip .zip .label-icon,
+.details .billing-details form .email-phone .email-address .label-icon,
+.details .billing-details form .email-phone .phone .label-icon {
+    display: flex;
+}
+.details .billing-details form input[type="text"] {
+    outline: none;
+}
+.details .billing-details form input[type="text"]:focus {
+    border:1px solid #9f4ed0;
+}
+.details .billing-details form input[type="checkbox"] {
+    accent-color: var(--main-color);
+}
+.details .billing-details form .check-box-1 {
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+.details .billing-details form .check-box-2 {
+    margin-bottom: 30px;
+}
+.details .billing-details form p {
+    margin-bottom:15px;
+}
+.details .billing-details form textarea {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding:15px;
+    border-radius:3px;
+    outline: none;
+}
+.details .billing-details form textarea:focus {
+    border:1px solid #9f4ed0;
+} 
+.details .coupon-details .coupon-code-area p {
+    margin-bottom: 15px;
+    font-size:0.9em;
+}
+.details .coupon-details .coupon-code-area .coupon-code {
+    display:flex;
+}
+.details .coupon-details .coupon-code-area .coupon-code input {
+    outline: none;
+    padding: 7px 10px;
+    width: 50%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.details .coupon-details .coupon-code-area .coupon-code input[type="text"]:focus {
+    border:1px solid #9f4ed0;
+}
+.details .coupon-details .coupon-code-area .coupon-code button {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0px;
+    transform: translateX(-5px);
+}
+.details .coupon-details .coupon-code-area .coupon-code button:hover {
+    transform:translateX(-25px);
+    box-shadow: none;
+}
+.details .coupon-details .your-order {
+    margin-top:35px;
+}
+.details .coupon-details .your-order .total-order {
+    margin-bottom: 60px;
+}
+.details .coupon-details .your-order .item-price {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.details .coupon-details .your-order .item-price p:last-child {
+    margin-right: 50px;
+}
+.details .coupon-details .your-order .item-price:first-child p:last-child {
+    margin-right: 70px;
+}
+.details .coupon-details .your-order .item-price:first-child {
+    font-weight: bold;
+}
+.details .coupon-details .your-order .item-price:nth-child(5) {
+    font-weight: bold;
+    margin-bottom: 50px;
+    border-bottom:none;
+}
+.details .coupon-details .your-order .item-price:nth-child(4) p:first-child {
+    font-weight: bold;
+}
+.details .coupon-details .your-order .payment {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.details .coupon-details .your-order .payment .payment-methods {
+    width: 100%;
+}
+.details .coupon-details .your-order .payment .payment-method {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding:10px 20px;
+    color:var(--main-color);
+    margin-bottom: 15px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: var(--main-transition);
+
+}
+.details .coupon-details .your-order .payment .payment-method::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    transform: translateX(-550px);
+    transition: var(--main-transition);
+    z-index: -111;
+}
+.details .coupon-details .your-order .payment .payment-method:hover::before {
+    transform: translateX(0);
+}
+.details .coupon-details .your-order .payment .payment-method:hover {
+    color:white ;
+}
+.details .coupon-details .your-order .payment .payment-method:last-child {
+    margin-bottom:50px;
+}
+.details .coupon-details .your-order .payment a {
+    color: white;
+}
+.details .coupon-details .your-order .payment button {
+    width: 100%;
+    padding:20px;
+    font-size: 0.8em;
+}
